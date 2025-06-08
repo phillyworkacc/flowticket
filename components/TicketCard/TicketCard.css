@@ -1,0 +1,57 @@
+.ticket-card-container {
+   width: 100%;
+   padding: 20px;
+   max-width: 500px;
+   user-select: none;
+}
+
+.ticket-card-container .ticket-card {
+   width: 100%;
+   aspect-ratio: 1.7/1;
+   padding: 10px;
+   border-radius: 14px;
+   position: relative;
+}
+
+.ticket-card .ticket-qr-code {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: fit-content;
+   aspect-ratio: 1;
+   padding: 20px;
+}
+
+.ticket-card .ticket-id {
+   position: absolute;
+   top: 0;
+   right: 0;
+   padding: 20px;
+}
+
+.ticket-card .ticket-qr-code .qr-code {
+   width: fit-content;
+   aspect-ratio: 1;
+   overflow: hidden;
+   border-radius: 10px;
+}
+
+.ticket-card .event-info {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 3px;
+   width: 50%;
+   max-width: 210px;
+   white-space: wrap;
+}
+
+.ticket-card .guest-info {
+   padding: 10px;
+}

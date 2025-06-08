@@ -1,0 +1,46 @@
+.guest-page-container {
+   width: 100vw;
+   height: 100vh;
+   background-color: #141414;
+   background-image: url('../public/assets/grain.png');
+   background-repeat: repeat;
+   background-size: auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+}
+
+.guest-details input {
+   border: 0px solid transparent;
+   border-bottom: 1px solid #ededed;
+   background-color: transparent;
+   border-radius: 0;
+   text-align: center;
+   color: white;
+}
+
+.ticket-customizer {
+   width: 100%;
+   max-width: 900px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+span.spinner {
+   display: inline-block;
+   width: 1.25rem;
+   height: 1.25rem;
+   margin: 2px 0;
+   border: 3px solid #fff;
+   border-top-color: #ffffff00;
+   border-radius: 50%;
+   animation: spin 1s linear infinite;
+   margin-right: 0.5rem;
+   vertical-align: middle;
+}
+
+@keyframes spin {
+   to { transform: rotate(360deg); }
+}

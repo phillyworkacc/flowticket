@@ -1,0 +1,68 @@
+.auth {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   align-items: start;
+   justify-content: center;
+}
+
+@media screen and (min-width: 900px) {
+   .auth {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+}
+
+.auth .auth-box {
+   width: 100%;
+   max-width: 500px;
+   padding: 40px;
+   border-radius: 20px;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   gap: 1rem;
+}
+
+@media screen and (min-width: 900px) {
+   .auth .auth-box { border: 1px solid #dedede; }
+}
+
+.auth .auth-box .form {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   gap: 1rem;
+   overflow: hidden;
+}
+
+.auth .auth-box .form-content {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.auth .auth-box .form-content input {
+   width: 100%;
+   border-color: #dedede;
+}
+
+span.spinner {
+   display: inline-block;
+   width: 1.25rem;
+   height: 1.25rem;
+   margin: 2px 0;
+   border: 3px solid #fff;
+   border-top-color: #ffffff00;
+   border-radius: 50%;
+   animation: spin 1s linear infinite;
+   margin-right: 0.5rem;
+   vertical-align: middle;
+}
+
+@keyframes spin {
+   to { transform: rotate(360deg); }
+}

@@ -1,0 +1,20 @@
+{
+   "name": "FlowTicket",
+   "short_name": "FlowTicket",
+   "description": "An app to manage event tickets, visitors and vip guests",
+   "background_color": "#ffffff",
+   "theme_color": "#ffffff",
+   "icons": [
+      {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+      }
+   ],
+   "start_url": "/app",
+   "display": "standalone",
+   "orientation": "portrait",
+   "lang": "en",
+   "dir": "ltr",
+   "categories": ["productivity"]
+}

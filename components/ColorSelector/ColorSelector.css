@@ -1,0 +1,36 @@
+.color-selector {
+   width: 100%;
+   max-width: 500px;
+   padding: 5px 10px;
+   height: 6vh;
+   border-radius: 8px;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.color-selector .option {
+   height: 100%;
+   aspect-ratio: 1;
+   border-radius: 100%;
+   border: 2px solid transparent;
+   padding: 2px;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.color-selector .option.selected {
+   outline: 2px solid #ffedc5;
+}
+
+.color-selector .option .option-bg {
+   height: 100%;
+   aspect-ratio: 1;
+   border-radius: 100%;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
