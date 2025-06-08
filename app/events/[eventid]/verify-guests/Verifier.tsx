@@ -27,13 +27,20 @@ export default function Html5QrCodeScannerPage ({ eventid }: { eventid: string }
 		Html5Qrcode.getCameras()
 		.then((devices: CameraDevice[]) => {
 			if (devices && devices.length > 0) {
-				const cameraId: string = devices[0].id;
+				let cameraId: string = devices[0].id;
 				const config: Html5QrcodeCameraScanConfig = {
 					fps: 10, qrbox: { width: 250, height: 250 },
 				};
 
+				const rearCamera = devices.find(device =>
+					device.label.toLowerCase().includes('back') ||
+					device.label.toLowerCase().includes('environment')
+				);
+				
+				if (rearCamera) cameraId = rearCamera.id;
+
 				html5QrCode.start(
-					cameraId, config, 
+					cameraId, config,
 					(decodedText: string, decodedResult: Html5QrcodeResult) => {
 						console.log('Decoded:', decodedText, decodedResult);
 						setResult(decodedText);
